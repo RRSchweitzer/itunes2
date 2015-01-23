@@ -50,16 +50,16 @@ $scope.getSongData = function(){
 // the same as the function above. I've commented this function out, because I don't want both functions with the same name saved to the scope object.
 // I could rename the function below, but then I would have to change my ng-clicks and/or ng-changes in the view. I'm too lazy to do that. 
 // I included this for demonstration purposes.
-$scope.getSongData = function(){
-  if(!scope.search.type){
-    $scope.search.type = 'all'
-  };
-  itunesService.getData3($scope.search.artist, $scope.search.type).then(function(res){
-    $scope.songData = res;
-  }, function(err){
-    console.log(err);
-  });
-};
+// $scope.getSongData = function(){
+//   if(!scope.search.type){
+//     $scope.search.type = 'all'
+//   };
+//   itunesService.getData3($scope.search.artist, $scope.search.type).then(function(res){
+//     $scope.songData = res;
+//   }, function(err){
+//     console.log(err);
+//   });
+// };
 
 // This is the same logic I have in itunesService.getSongData3. I still have it here because I'm using itunesService.getSongData
 var parsedInfo = [];
