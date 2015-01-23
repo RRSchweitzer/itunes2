@@ -34,9 +34,9 @@ this.getData2 = function(artist, type){
       method: 'JSONP',
       url: 'https://itunes.apple.com/search?term=' + artist + '&media=' + type + '&callback=JSON_CALLBACK'
     }).then(function(res){
-      deferred.resolve(res, "it worked");
+      deferred.resolve(res);
     }, function(err){
-      deferred.reject(err, 'it didnt');
+      deferred.reject(err);
     });
   return deferred.promise;
 };
