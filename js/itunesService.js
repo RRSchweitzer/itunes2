@@ -76,7 +76,7 @@ this.getData3 = function(artist, type){
           Play: data[i].previewUrl,
           Type: data[i].kind
         };
-        songArray.push(obj);
+        songArray.push(songObject);
       }
       deferred.resolve(songArray);
     }, function(err){
