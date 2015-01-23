@@ -62,6 +62,7 @@ $scope.getSongData = function(){
 // };
 
 // This is the same logic I have in itunesService.getSongData3. I still have it here because I'm using itunesService.getSongData
+// But, it's probably better practice to use getSongData3, because that moves more of my data manipulation and length from my controller into the service.
 var parsedInfo = [];
 
 var parseInfo = function(data) {
